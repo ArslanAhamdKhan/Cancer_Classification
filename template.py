@@ -13,7 +13,7 @@ list_of_file=[
     f"src/{project_name}/components/__init__.py",
     f"src/{project_name}/config/__init__.py",
     f"src/{project_name}/config/configuration.py",
-    f"src/{project_name}/pipelinie/__init__.py",
+    f"src/{project_name}/pipeline/__init__.py",
     f"src/{project_name}/entity/__init__.py",
     f"src/{project_name}/constants/__init__.py",
     "config/config.yaml",
@@ -37,7 +37,7 @@ for filepath in list_of_file:
     if (not os.path.exists(filepath)) or (os.path.getsize(filename)==0):
         with open(filepath,"w") as f:
             pass
-            logging.info(f"Creating emplty file: {filepath}")
+            logging.info(f"Creating empty file: {filepath}")
         
     else:
         logging.info(f"{filename} is already exists")
